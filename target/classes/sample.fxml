@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane orientation="VERTICAL" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+    <items>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="649.0">
+            <children>
+                <Button fx:id="addButton" layoutX="14.0" layoutY="51.0" mnemonicParsing="false" onAction="#addEvent" text="Добавить">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <TableView fx:id="table" layoutX="9.0" layoutY="89.0" prefHeight="298.0" prefWidth="631.0">
+                    <columns>
+                        <TableColumn fx:id="id" prefWidth="48.0" text="ID" />
+                        <TableColumn fx:id="lastname" prefWidth="127.00001525878906" text="Фамилия" />
+                        <TableColumn fx:id="firstname" prefWidth="135.0" text="Имя" />
+                        <TableColumn fx:id="secondname" prefWidth="118.0" text="Отчество" />
+                        <TableColumn fx:id="birthdate" prefWidth="111.0" text="Дата рождения" />
+                        <TableColumn fx:id="gruppa" prefWidth="90.0" text="Группа" />
+                    </columns>
+                </TableView>
+                <Button fx:id="deleteButton" layoutX="107.0" layoutY="51.0" mnemonicParsing="false" onAction="#deleteEvent" prefHeight="31.0" prefWidth="121.0" text="Удалить">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+                <Label alignment="TOP_CENTER" contentDisplay="TOP" layoutX="297.0" layoutY="14.0" text="Студенты">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </Label>
+            </children>
+            <padding>
+                <Insets top="10.0" />
+            </padding>
+        </AnchorPane>
+    </items>
+</SplitPane>
