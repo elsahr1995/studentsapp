@@ -30,7 +30,7 @@ public class Student {
     private String secondname;
 
     @Column (name = "birthdate")
-    private LocalDate birthdate;
+    private String birthdate;
 
     @Column(name = "gruppa")
     private String gruppa;
